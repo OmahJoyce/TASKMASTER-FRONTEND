@@ -1,1 +1,36 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskMaster</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>TaskMaster</h1>
+    </header>
+    <main>
+        <section class="task-form">
+            <h2>Add a New Task</h2>
+            <form id="taskForm">
+                <input type="text" id="title" placeholder="Title" required>
+                <textarea id="description" placeholder="Description" required></textarea>
+                <input type="date" id="deadline" required>
+                <select id="priority">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+                <button type="submit">Add Task</button>
+            </form>
+        </section>
+        <section class="task-list">
+            <h2>Your Tasks</h2>
+            <input type="text" id="searchBar" placeholder="Search tasks...">
+            <div id="tasksContainer"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+  </html>
